@@ -20,7 +20,7 @@ class CommentCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
+            color: Colors.black.withOpacity(0.05),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -54,10 +54,10 @@ class CommentCard extends StatelessWidget {
                               vertical: 2,
                             ),
                             decoration: BoxDecoration(
-                              color: Colors.blue.withValues(alpha: 0.1),
+                              color: Colors.blue.withOpacity(0.1),
                               borderRadius: BorderRadius.circular(4),
                               border: Border.all(
-                                color: Colors.blue.withValues(alpha: 0.3),
+                                color: Colors.blue.withOpacity(0.3),
                                 width: 0.5,
                               ),
                             ),
@@ -96,7 +96,7 @@ class CommentCard extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
               decoration: BoxDecoration(
-                color: Colors.grey.withValues(alpha: 0.08),
+                color: Colors.grey.withOpacity(0.08),
                 borderRadius: BorderRadius.circular(6),
               ),
               child: Row(
@@ -140,7 +140,7 @@ class CommentCard extends StatelessWidget {
                 width: Width(100, Unit.percent),
                 height: Height.auto(),
                 border: Border.all(
-                  color: Colors.grey.withValues(alpha: 0.2),
+                  color: Colors.grey.withOpacity(0.2),
                   width: 1,
                 ),
               ),
@@ -176,7 +176,7 @@ class CommentCard extends StatelessWidget {
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   minimumSize: const Size(0, 0),
                   tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  backgroundColor: Colors.grey.withValues(alpha: 0.05),
+                  backgroundColor: Colors.grey.withOpacity(0.05),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(6),
                   ),
@@ -195,7 +195,7 @@ class CommentCard extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           border: Border.all(
-            color: Colors.grey.withValues(alpha: 0.2),
+            color: Colors.grey.withOpacity(0.2),
             width: 1.5,
           ),
         ),
@@ -231,7 +231,7 @@ class CommentCard extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(
-          color: Colors.grey.withValues(alpha: 0.2),
+          color: Colors.grey.withOpacity(0.2),
           width: 1.5,
         ),
       ),

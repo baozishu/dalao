@@ -425,7 +425,7 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
             decoration: BoxDecoration(
-                color: Theme.of(context).primaryColor.withValues(alpha: 0.1),
+                color: Theme.of(context).primaryColor.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(10)),
             child: Text('${_comments.length}',
                 style: TextStyle(
@@ -546,7 +546,7 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
               margin: const EdgeInsets.only(bottom: 6),
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                  color: Colors.blue.withValues(alpha: 0.1),
+                  color: Colors.blue.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(4)),
               child: Text('回复 @${comment.replyToName}',
                   style: TextStyle(color: Colors.blue[700], fontSize: 12)),
@@ -608,7 +608,7 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
         color: Theme.of(context).scaffoldBackgroundColor,
         boxShadow: [
           BoxShadow(
-              color: Colors.black.withValues(alpha: 0.08),
+              color: Colors.black.withOpacity(0.08),
               blurRadius: 8,
               offset: const Offset(0, -2))
         ],
@@ -623,7 +623,7 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 decoration: BoxDecoration(
-                    color: Colors.blue.withValues(alpha: 0.1),
+                    color: Colors.blue.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(8)),
                 child: Row(
                   children: [
@@ -711,7 +711,7 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
     return CircleAvatar(
       radius: size / 2,
       backgroundColor: Colors.primaries[name.hashCode % Colors.primaries.length]
-          .withValues(alpha: 0.2),
+          .withOpacity(0.2),
       child: Text(name.isNotEmpty ? name[0].toUpperCase() : '?',
           style: TextStyle(
               fontSize: size * 0.4,

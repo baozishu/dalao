@@ -267,10 +267,6 @@ class HtmlParser {
 
   /// 解析"我的帖子"元素 (li.media.post)
   static Post? _parseMyPostElement(Element element) {
-    // 从 data-pid 获取评论 ID (这里作为临时ID)
-    final pidStr = element.attributes['data-pid'] ?? '';
-    final pid = int.tryParse(pidStr) ?? 0;
-
     // 从标题链接中提取真正的帖子ID
     final titleLink = element.querySelector('.message h6 a');
     if (titleLink == null) return null;
